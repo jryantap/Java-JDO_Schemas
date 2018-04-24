@@ -1,4 +1,5 @@
 import javax.jdo.*;
+import com.objectdb.Utilities;
 
 public class CreateData {
 
@@ -34,8 +35,24 @@ public class CreateData {
         TimeDate td3 = new TimeDate(45, 15, 1, 4, 2018);
         TimeDate td4 = new TimeDate(59, 23, 1, 10, 2020);
 
+        //Persistence Manager
+        PersistenceManager pm = Utilities.getPersistenceManager("bank.odb");
+        pm.currentTransaction().begin();
+        pm.makePersistent(cd1);
+        pm.makePersistent(cw1);
+        pm.makePersistent(t1);
+        pm.makePersistent(a1);
+        pm.makePersistent(a2);
+        pm.makePersistent(ah1);
+        pm.makePersistent(bc1);
+        pm.makePersistent(atm1);
+        pm.makePersistent(b1);
+        pm.makePersistent(td1);
+        pm.makePersistent(td2);
+        pm.makePersistent(td3);
+        pm.makePersistent(td4);
 
-
+        pm.currentTransaction().commit();
 
     }
 }
