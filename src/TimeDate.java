@@ -5,4 +5,6 @@ public class TimeDate {
     int day;
     int month;
     int year;
+
+    BankCard expirationDate;
 }
