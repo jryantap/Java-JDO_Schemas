@@ -23,4 +23,6 @@ public abstract class ATMTransaction implements Comparable<ATMTransaction> {
 
         return this.IDcode.compareTo(this.IDcode);
     }
+
+
 }
