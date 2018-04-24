@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public class Transfer extends ATMTransaction {
-    float targetBalance;
+    static float targetBalance;
 
     Account targetAccount;
 
@@ -18,6 +18,10 @@ public class Transfer extends ATMTransaction {
         this.balance = balance;
     }
 
+    @Override
+    public String toString(){
+        return targetBalance + " ";
+    }
 
 
 }

@@ -9,4 +9,8 @@ public class TimeDate {
     BankCard expirationDate;
     ATMTransaction timeDate;
 
+    public String toString(){
+        return minute + " " + hour + " " + day + " " + month + " " + year + " ";
+    }
+
 }
