@@ -16,4 +16,6 @@ public class Transfer extends ATMTransaction {
         this.balance = balance;
     }
 
+
+
 }

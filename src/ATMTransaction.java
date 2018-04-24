@@ -12,4 +12,10 @@ public abstract class ATMTransaction implements Comparable<ATMTransaction> {
     /* TODO: implement compareTo method here
 
      */
+
+    @Override
+    public int compareTo(ATMTransaction that)
+    {
+        return this.IDcode.compareTo(this.IDcode);
+    }
 }
