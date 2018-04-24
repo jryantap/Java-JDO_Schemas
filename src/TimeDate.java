@@ -7,4 +7,6 @@ public class TimeDate {
     int year;
 
     BankCard expirationDate;
+    ATMTransaction timeDate;
+
 }
