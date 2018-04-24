@@ -1,3 +1,4 @@
+import java.sql.Time;
 import java.util.HashSet;
 
 public class BankCard {
@@ -6,8 +7,13 @@ public class BankCard {
     String securityCode;
     String PIN;
 
-    HashSet<ATMTransaction> carUsed = new HashSet<ATMTransaction>();
-    HashSet<AccountHolder> cards = new HashSet<AccountHolder>();
+    HashSet<ATMTransaction> usedCard = new HashSet<ATMTransaction>();
+    HashSet<AccountHolder> cardsThis = new HashSet<AccountHolder>();
+    HashSet<TimeDate> dateTime = new HashSet<TimeDate>();
 
-    //TODO: may need HashSet<TimeDate> expirationDate here
+    public BankCard(String number, String securityCode, String pin){
+        this.number = number;
+        this.securityCode = securityCode;
+        this.PIN = pin;
+    }
 }

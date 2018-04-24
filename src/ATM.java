@@ -6,4 +6,10 @@ public class ATM {
     HashSet<ATMTransaction> ATMused = new HashSet<ATMTransaction>();
     Branch ATMs;
 
+    public ATM(String IDcode)
+    {
+        this.IDcode = IDcode;
+    }
+
+
 }

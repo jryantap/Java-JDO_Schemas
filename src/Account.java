@@ -4,8 +4,8 @@ public class Account {
     String number;
     float currentBalance;
 
-    TreeSet<Transfer> targetAccount = new TreeSet<Transfer>();
-    TreeSet<ATMTransaction> account = new TreeSet<ATMTransaction>();
+    TreeSet<Transfer> accountTarget = new TreeSet<Transfer>();
+    TreeSet<ATMTransaction> accountATM = new TreeSet<ATMTransaction>();
 
     // TODO:  see Project dot 3...
     // TODO:  TreeSet<E> requires class E to implement Comparable<E> or Comparator<E>
