@@ -7,4 +7,5 @@ public class BankCard {
     String PIN;
 
     HashSet<ATMTransaction> carUsed = new HashSet<ATMTransaction>();
+    HashSet<AccountHolder> cards = new HashSet<AccountHolder>();
 }
