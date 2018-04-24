@@ -6,4 +6,6 @@ public class AccountHolder {
     String name;
     String address;
     String SSN;
+
+    HashSet<Account> accounts = new HashSet<Account>();
 }
