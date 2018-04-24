@@ -52,6 +52,8 @@ public class CreateData {
         pm.makePersistent(td3);
         pm.makePersistent(td4);
 
+        //TODO:  apply persistence class HERE
+
         pm.currentTransaction().commit();
 
     }
