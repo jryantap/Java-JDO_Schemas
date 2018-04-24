@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public class Transfer extends ATMTransaction {
-    static float targetBalance;
+    float targetBalance;
 
     Account targetAccount;
 
@@ -10,11 +10,12 @@ public class Transfer extends ATMTransaction {
     // TODO: by providing, respectively, compareTo or compare function to define a linear ordering.
 
 
-    public Transfer(String idCode, float amount, float balance)
+    public Transfer(String idCode, float amount, float balance, float targetBalance)
     {
         this.IDcode = idCode;
         this.amount = amount;
         this.balance = balance;
+        this.targetBalance = targetBalance;
     }
 
     @Override
