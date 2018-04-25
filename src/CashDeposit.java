@@ -1,8 +1,8 @@
 public class CashDeposit extends ATMTransaction {
 
-    public CashDeposit(String idCode, float amount, float balance)
+    public CashDeposit(String IDcode, float amount, float balance)
     {
-        this.IDcode = idCode;
+        this.IDcode = IDcode;
         this.amount = amount;
         this.balance = balance;
     }

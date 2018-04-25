@@ -20,7 +20,7 @@ public abstract class ATMTransaction implements Comparable<ATMTransaction> {
         else if(this.balance > that.balance)
             return 1;
         else if(this.balance < that.balance)
-            return 1;
+            return -1;
 
         return this.IDcode.compareTo(this.IDcode);
     }

@@ -38,6 +38,7 @@ public class CreateData {
         //Persistence Manager
         PersistenceManager pm = Utilities.getPersistenceManager("bank.odb");
         pm.currentTransaction().begin();
+
         pm.makePersistent(cd1);
         pm.makePersistent(cw1);
         pm.makePersistent(t1);
@@ -71,21 +72,21 @@ public class CreateData {
         ah1.accounts.add(a2);
         ah1.accounts.add(a1);
 
+        //atm used for a withdrawal, deposit, transfer
         atm1.ATMused.add(cd1);
         atm1.ATMused.add(cw1);
         atm1.ATMused.add(t1);
 
+        //branch where the ATM was used
         b1.ATMs.add(atm1);
 
+        //bank card used for a withdrawal, transfer or deposit
         bc1.cardUsed.add(t1);
         bc1.cardUsed.add(cd1);
         bc1.cardUsed.add(cw1);
         bc1.expirationDate.add(td4);
 
-        pm.currentTransaction().commit();
-
-
-
+        pm.currentTransaction().commit();  //end to modify database
 
 
     }
