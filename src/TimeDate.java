@@ -6,8 +6,8 @@ public class TimeDate {
     int month;
     int year;
 
-    BankCard dateExpiration;
-    ATMTransaction dateTime;
+    BankCard expirationDate;
+    ATMTransaction timeDate;
 
     public TimeDate(int minute, int hour, int day, int month, int year)
     {
