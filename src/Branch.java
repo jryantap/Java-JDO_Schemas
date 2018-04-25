@@ -1,5 +1,7 @@
 import java.util.HashSet;
 
+@javax.jdo.annotations.PersistenceCapable
+
 public class Branch {
 
     String IDcode;

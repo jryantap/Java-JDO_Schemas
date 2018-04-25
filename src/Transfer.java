@@ -1,4 +1,4 @@
-import java.util.HashSet;
+@javax.jdo.annotations.PersistenceCapable
 
 public class Transfer extends ATMTransaction {
 

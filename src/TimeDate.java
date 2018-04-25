@@ -1,3 +1,5 @@
+@javax.jdo.annotations.PersistenceCapable
+
 public class TimeDate {
 
     int minute;

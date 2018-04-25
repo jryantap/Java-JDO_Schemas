@@ -1,3 +1,5 @@
+@javax.jdo.annotations.PersistenceCapable
+
 public class CashDeposit extends ATMTransaction {
 
     public CashDeposit(String IDcode, float amount, float balance)

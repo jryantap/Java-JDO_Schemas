@@ -1,3 +1,6 @@
+@javax.jdo.annotations.PersistenceCapable
+
+
 public abstract class ATMTransaction implements Comparable<ATMTransaction> {
 
     String IDcode;

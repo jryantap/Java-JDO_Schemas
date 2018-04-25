@@ -1,5 +1,8 @@
 import java.util.HashSet;
 
+@javax.jdo.annotations.PersistenceCapable
+
+
 public class ATM {
     String IDcode;
 

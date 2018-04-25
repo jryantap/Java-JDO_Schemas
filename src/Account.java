@@ -1,5 +1,7 @@
 import java.util.TreeSet;
 
+@javax.jdo.annotations.PersistenceCapable
+
 public class Account {
     String number;
     float currentBalance;
