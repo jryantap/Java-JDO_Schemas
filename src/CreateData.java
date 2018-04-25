@@ -54,7 +54,7 @@ public class CreateData {
         pm.makePersistent(td4);
 
         //a deposit or withdrawal or transfer made on td1, td2, td3
-        //a expiration date on a bank card.
+        //an expiration date on a bank card.
         td1.timeDate = cd1;
         td2.timeDate = cw1;
         td3.timeDate = t1;

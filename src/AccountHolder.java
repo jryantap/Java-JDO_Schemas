@@ -2,8 +2,6 @@ import java.util.HashSet;
 
 @javax.jdo.annotations.PersistenceCapable
 
-
-
 public class AccountHolder {
 
     String name;
