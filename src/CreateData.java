@@ -52,7 +52,33 @@ public class CreateData {
         pm.makePersistent(td3);
         pm.makePersistent(td4);
 
+        //a deposit/withdrawal/transfer made on td1, td2, td3
+        td1.dateTime = cd1;
+        td2.dateTime = cw1;
+        td3.dateTime = t1;
 
+        //deposit or withdrawal or transfer ATM transaction ---> account
+        a1.account.add(cd1);
+        a1.account.add(cw1);
+        a1.account.add(t1);
+
+        //a transfer to a targetAccount; maybe different account number
+        a2.targetAccount.add(t1);
+
+
+        ah1.accounts.add(a2);
+        ah1.accounts.add(a1);
+
+        atm1.ATMused.add(cd1);
+        atm1.ATMused.add(cw1);
+        atm1.ATMused.add(t1);
+
+        b1.ATMs.add(atm1);
+
+        bc1.cardUsed.add(t1);
+        bc1.cardUsed.add(cd1);
+        bc1.cardUsed.add(cw1);
+        bc1.expirationDate.add(td4);
 
         pm.currentTransaction().commit();
 
