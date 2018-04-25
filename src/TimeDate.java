@@ -20,8 +20,8 @@ public class TimeDate {
         this.year = year;
     }
 
-    public String toString(){
-        return minute + " " + hour + " " + day + " " + month + " " + year + " ";
-    }
+//    public String toString(){
+//        return minute + " " + hour + " " + day + " " + month + " " + year + " ";
+//    }
 
 }

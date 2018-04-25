@@ -6,7 +6,6 @@ public abstract class ATMTransaction implements Comparable<ATMTransaction> {
     String IDcode;
     float amount;
     float balance;
-    TimeDate timeDate;
 
     // TODO:  see Project dot 3...
     // TODO:  TreeSet<E> requires class E to implement Comparable<E> or Comparator<E>

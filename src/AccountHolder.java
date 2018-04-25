@@ -10,7 +10,7 @@ public class AccountHolder {
     String address;
     String SSN;
 
-    HashSet<Account> accounts = new HashSet<Account>();
+    //HashSet<Account> accounts = new HashSet<Account>();
 
     public AccountHolder(String name, String address, String SSN)
     {

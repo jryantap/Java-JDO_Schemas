@@ -3,7 +3,6 @@
 public class Transfer extends ATMTransaction {
 
     float targetBalance;
-    Account targetAccount;
 
     // TODO:  see Project dot 3...
     // TODO:  TreeSet<E> requires class E to implement Comparable<E> or Comparator<E>

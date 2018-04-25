@@ -11,7 +11,6 @@ public class BankCard {
 
     HashSet<ATMTransaction> cardUsed= new HashSet<ATMTransaction>();
     HashSet<AccountHolder> cards = new HashSet<AccountHolder>();
-    HashSet<TimeDate> expirationDate = new HashSet<TimeDate>();
 
     public BankCard(String number, String securityCode, String pin){
         this.number = number;

@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.TreeSet;
 
 @javax.jdo.annotations.PersistenceCapable
@@ -8,6 +9,7 @@ public class Account {
 
     TreeSet<Transfer> targetAccount = new TreeSet<Transfer>();
     TreeSet<ATMTransaction> account = new TreeSet<ATMTransaction>();
+    HashSet<AccountHolder> accounts = new HashSet<AccountHolder>();
 
     // TODO:  see Project dot 3...
     // TODO:  TreeSet<E> requires class E to implement Comparable<E> or Comparator<E>

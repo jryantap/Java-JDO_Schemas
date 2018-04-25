@@ -68,9 +68,10 @@ public class CreateData {
         //a transfer to a targetAccount; maybe different account number
         a2.targetAccount.add(t1);
 
+
         //a person's two different accounts (maybe checking or savings)
-        ah1.accounts.add(a2);
-        ah1.accounts.add(a1);
+        a2.accounts.add(ah1);
+        a1.accounts.add(ah1);
 
         //atm used for a withdrawal, deposit, transfer
         atm1.ATMused.add(cd1);
@@ -84,7 +85,6 @@ public class CreateData {
         bc1.cardUsed.add(t1);
         bc1.cardUsed.add(cd1);
         bc1.cardUsed.add(cw1);
-        bc1.expirationDate.add(td4);
 
         pm.currentTransaction().commit();  //end to modify database
 
