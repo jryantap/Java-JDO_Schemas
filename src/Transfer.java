@@ -1,8 +1,8 @@
 import java.util.HashSet;
 
 public class Transfer extends ATMTransaction {
-    float targetBalance;
 
+    float targetBalance;
     Account targetAccount;
 
     // TODO:  see Project dot 3...
