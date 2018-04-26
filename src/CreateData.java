@@ -53,17 +53,19 @@ public class CreateData {
         pm.makePersistent(td3);
         pm.makePersistent(td4);
 
+
+
         //a deposit or withdrawal or transfer made on td1, td2, td3
         //an expiration date on a bank card.
-        td1.timeDate = cd1;
-        td2.timeDate = cw1;
-        td3.timeDate = t1;
+        td1.atmTransaction = cd1;
+        td2.atmTransaction = cw1;
+        td3.atmTransaction = t1;
         td4.expirationDate = bc1;
 
         //deposit or withdrawal or transfer ATM transaction ---> account
+        a1.account.add(t1);
         a1.account.add(cd1);
         a1.account.add(cw1);
-        a1.account.add(t1);
 
         //a transfer to a targetAccount; maybe different account number
         a2.targetAccount.add(t1);
@@ -87,6 +89,8 @@ public class CreateData {
         bc1.cardUsed.add(cw1);
 
         pm.currentTransaction().commit();  //end to modify database
+
+
 
 
     }

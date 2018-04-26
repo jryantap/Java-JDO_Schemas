@@ -1,7 +1,7 @@
 @javax.jdo.annotations.PersistenceCapable
 
 
-public abstract class ATMTransaction implements Comparable<ATMTransaction> {
+public abstract class ATMTransaction implements Comparable<ATMTransaction>{
 
     String IDcode;
     float amount;
@@ -14,17 +14,19 @@ public abstract class ATMTransaction implements Comparable<ATMTransaction> {
     @Override
     public int compareTo(ATMTransaction that)
     {
-        //TODO:  fill this method up
-        if(this.amount > that.amount)
-            return 1;
-        else if(this.amount < that.amount)
-            return -1;
-        else if(this.balance > that.balance)
-            return 1;
-        else if(this.balance < that.balance)
-            return -1;
+        return this.IDcode.compareTo(that.IDcode);
 
-        return this.IDcode.compareTo(this.IDcode);
+//        if(this.amount > that.amount)
+//            return 1;
+//        else if(this.amount < that.amount)
+//            return -1;
+//        else if(this.balance > that.balance)
+//            return 1;
+//        else if(this.balance < that.balance)
+//            return -1;
+//
+//        return this.IDcode.compareTo(this.IDcode);
+
     }
 
 
