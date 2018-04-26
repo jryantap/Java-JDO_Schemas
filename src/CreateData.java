@@ -60,6 +60,7 @@ public class CreateData {
         td3.atmTransaction = t1;
         td4.expirationDate = bc1;
 
+
         //deposit or withdrawal or transfer ATM transaction ---> account
         a1.account.add(t1);
         a1.account.add(cd1);
@@ -87,9 +88,5 @@ public class CreateData {
         bc1.cardUsed.add(cw1);
 
         pm.currentTransaction().commit();  //end to modify database
-
-
-
-
     }
 }
